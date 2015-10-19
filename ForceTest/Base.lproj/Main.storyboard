@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dfI-O9-95W">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Animation-->
+        <scene sceneID="MtI-nX-aBq">
+            <objects>
+                <viewController id="NFq-q4-WEB" customClass="DrivenAnimationViewController" customModule="ForceTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hnL-Wq-2DU"/>
+                        <viewControllerLayoutGuide type="bottom" id="baa-0u-hcS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0PJ-76-weK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cool_cat" translatesAutoresizingMaskIntoConstraints="NO" id="6eV-AA-pDR">
+                                <rect key="frame" x="200" y="200" width="200" height="200"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="6eV-AA-pDR" secondAttribute="height" multiplier="1:1" id="WjA-6I-4zE"/>
+                                    <constraint firstAttribute="width" constant="200" id="h8s-lL-VIZ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6eV-AA-pDR" firstAttribute="centerY" secondItem="0PJ-76-weK" secondAttribute="centerY" id="Eoq-nq-gdI"/>
+                            <constraint firstItem="6eV-AA-pDR" firstAttribute="width" secondItem="6eV-AA-pDR" secondAttribute="height" multiplier="1:1" id="mef-tY-Jo7"/>
+                            <constraint firstItem="6eV-AA-pDR" firstAttribute="centerX" secondItem="0PJ-76-weK" secondAttribute="centerX" id="x47-oW-44y"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Animation" id="GQD-zJ-YHA"/>
+                    <connections>
+                        <outlet property="mainImageView" destination="6eV-AA-pDR" id="VeY-FK-cfG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3pU-5I-nhl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-12" y="841"/>
+        </scene>
+        <!--Button-->
+        <scene sceneID="kaY-ff-N3R">
+            <objects>
+                <viewController id="8tM-Ti-yGJ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yzq-V0-RHw"/>
+                        <viewControllerLayoutGuide type="bottom" id="Rqm-yg-BsH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lIj-yu-JFc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRT-96-aBg" customClass="ForceButton" customModule="ForceTest" customModuleProvider="target">
+                                <rect key="frame" x="200" y="157.5" width="200" height="85"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.31045335531234741" green="0.64126443862915039" blue="0.86908328533172607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="0fi-t1-rF6"/>
+                                    <constraint firstAttribute="height" constant="85" id="aId-K7-ZdK"/>
+                                </constraints>
+                                <state key="normal" title="ScaleForce button">
+                                    <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="inspectableType">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGf-6C-xXX" customClass="ForceButton" customModule="ForceTest" customModuleProvider="target">
+                                <rect key="frame" x="200" y="338.5" width="200" height="85"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="J94-eo-mZo"/>
+                                    <constraint firstAttribute="width" constant="200" id="nsv-MO-nMf"/>
+                                </constraints>
+                                <state key="normal" title="ScaleForce button">
+                                    <color key="titleColor" red="0.21437117457389832" green="0.84290772676467896" blue="0.51260167360305786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="inspectableType">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gRT-96-aBg" firstAttribute="centerX" secondItem="lIj-yu-JFc" secondAttribute="centerX" id="6r0-HZ-Rqw"/>
+                            <constraint firstItem="iGf-6C-xXX" firstAttribute="top" secondItem="gRT-96-aBg" secondAttribute="bottom" constant="96" id="N8J-PC-dsE"/>
+                            <constraint firstItem="gRT-96-aBg" firstAttribute="centerY" secondItem="lIj-yu-JFc" secondAttribute="centerY" constant="-100" id="tcY-eT-w6V"/>
+                            <constraint firstItem="iGf-6C-xXX" firstAttribute="centerX" secondItem="lIj-yu-JFc" secondAttribute="centerX" id="xkp-7J-Hve"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Button" id="7yu-CJ-Hr8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yyi-hL-80v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-12" y="-564"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="PMf-KF-rZy">
+            <objects>
+                <tabBarController id="dfI-O9-95W" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="lj2-n0-yAK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="8tM-Ti-yGJ" kind="relationship" relationship="viewControllers" id="Enw-TO-sa2"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="WPo-RM-asC"/>
+                        <segue destination="NFq-q4-WEB" kind="relationship" relationship="viewControllers" id="ZRj-VJ-2zU"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DcJ-1O-Ebb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1334" y="115"/>
+        </scene>
+        <!--Image zoom-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ImageZoomViewController" customModule="ForceTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cool_cat" translatesAutoresizingMaskIntoConstraints="NO" id="iHi-QM-QzQ">
+                                <rect key="frame" x="200" y="200" width="200" height="200"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="3eA-Li-ipI"/>
+                                    <constraint firstAttribute="width" secondItem="iHi-QM-QzQ" secondAttribute="height" multiplier="1:1" id="Q4E-Ya-5se"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iHi-QM-QzQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3cA-zf-73y"/>
+                            <constraint firstItem="iHi-QM-QzQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5Gs-bc-ys9"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Image zoom" id="Chf-Bi-jnF"/>
+                    <connections>
+                        <outlet property="mainImageView" destination="iHi-QM-QzQ" id="9Q6-Vr-GVA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-12" y="142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cool_cat" width="960" height="600"/>
+    </resources>
+</document>
